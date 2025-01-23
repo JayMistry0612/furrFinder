@@ -1,0 +1,247 @@
+#header-top {
+    background: rgb(228, 227, 227);
+}
+
+#header-top a {
+    color: rgb(86, 16, 152)
+}
+
+/* #navbar .navbar-nav #heart i:hover {
+    color: red;
+
+}
+
+#navbar .navbar-nav #signin-button .btn {
+    color: white !important;
+    background-color: rgb(86, 16, 152);
+    font-style: bold !important;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.dropdown-menu {
+    width: 100vw;
+    left: 0;
+    right: 0;
+}
+
+.dropdown-menu {
+    text-align: center;
+}
+
+.dropdown-menu a.dropdown-item {
+    white-space: nowrap;
+    color: white !important;
+
+}
+
+.dropdown-menu a.dropdown-item:hover {
+    color: rgb(136, 94, 155) !important;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+#navbar .dropdown .dropdown-menu {
+    background-color: rgb(86, 16, 152) !important;
+}
+
+.navbar-brand {
+    color: rgb(86, 16, 152) !important;
+    font-weight: 800;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+} */
+
+#navbar-top {
+    display: flex;
+    justify-content: space-between;
+    margin: 1px 30px;
+}
+
+
+/* nav-bar part01 */
+#navbar-top .part-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#navbar-top .part-1 a {
+    text-decoration: none;
+    font-size: large;
+}
+
+#navbar-top .part-1 #logo a {
+    color: rgb(86, 16, 152) !important;
+}
+
+#navbar-top .part-1 #about-pets a {
+    color: black !important;
+}
+
+@media (max-width:822px) {
+    #navbar-top .part-1 #about-pets a {
+        display: none;
+    }
+}
+
+/* navbarpart-2 */
+
+#navbar-top .part-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#navbar-top .part-2 a #heart {
+    color: black;
+}
+
+#navbar-top .part-2 a #heart:hover {
+    color: red;
+}
+
+#navbar-top .part-2 button {
+    background-color: rgb(86, 16, 152);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+#navbar-top .part-2 button a {
+    color: white !important;
+    text-decoration: none;
+}
+
+#navbar-top .part-2 #nav-icon {
+    display: none;
+}
+
+@media (max-width:992px) {
+    #navbar-top .part-2 a #heart {
+        display: none;
+    }
+
+}
+
+@media (max-width:822px) {
+    #navbar-top .part-2 button {
+        border-radius: 50%;
+    }
+
+    #navbar-top .part-2 button span a {
+        display: none;
+        text-align: center;
+    }
+
+    #navbar-top .part-2 #nav-icon {
+        display: flex;
+    }
+}
+
+/* navbar-bottom */
+
+#navbar-bottom {
+    width: 100%;
+    background-color: rgb(86, 16, 152);
+}
+
+#navbar-bottom {
+    display: none;
+}
+
+#navbar-bottom .nav-items {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin: 2px 20px;
+    padding: 2px 30px;
+}
+
+#navbar-bottom .nav-items li a {
+    font-size: smaller;
+    color: white;
+    text-decoration: none;
+    font-style: bold;
+    font-weight: 500;
+}
+
+#navbar-bottom .nav-items li a:hover {
+    color: rgb(158, 104, 183);
+    text-decoration: underline;
+
+}
+
+@media (max-width:992px) {
+    #navbar-bottom {
+        display: none !important;
+    }
+
+}
+
+@media (min-width:1500px) {
+    #navbar-bottom .nav-items {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        margin: 2px 20px;
+        padding: 2px 30px;
+        gap: 50px;
+    }
+
+}
+
+#side-navbar {
+    position: absolute;
+    min-height: 100%;
+    background-color: rgb(86, 16, 152);
+    border-radius: 0 5% 0 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#side-navbar .side-nav-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 30px;
+    gap: 100px;
+    margin-top: 50px;
+}
+
+#side-navbar .side-nav-item li a {
+    font-size: xx-large;
+    color: white;
+    text-decoration: none;
+    font-style: bold;
+    font-weight: 500;
+}
+
+#side-navbar .side-nav-item li a:hover {
+    color: rgb(158, 104, 183);
+    text-decoration: underline;
+}
+
+#side-navbar .side-nav-item li {
+    list-style: none;
+}
+
+@media (min-width:822px) {
+    #side-navbar {
+        display: none !important;
+    }
+}
+
+@media (max-width:822px) {
+    #side-navbar {
+        display: none;
+    }
+}
