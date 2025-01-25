@@ -268,8 +268,82 @@ nav {
     }
 }
 
-@media (max-width:822px) {
-    #side-navbar {
-        /* display: none; */
+
+/* section -1 css */
+
+#section-1 .hero {
+    background-image: url(./assest/dogs-cats.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#section-1 .hero .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#section-1 .hero .search #search-bar {
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border-color: transparent;
+}
+
+#section-1 .hero .search:hover {
+    border: 2px solid rgb(86, 16, 152);
+}
+
+#section-1 .hero .search .search-icon {
+    background-color: rgb(86, 16, 152);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+#section-1 .hero .search .search-icon:hover {
+    background-color: rgb(54, 9, 96);
+}
+
+@media (max-width: 350px) {
+    #section-1 .hero .search {
+        padding: 5px;
+        gap: 10px;
+        overflow-x: auto;
     }
+}
+
+#section-1 .hero .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+#section-1 .hero .text h1 {
+    text-align: center;
+    font: bold;
+    font-weight: 800;
+}
+
+#section-1 .hero .text h5 {
+    text-align: center;
+    font: bold;
+    font-weight: 900;
+    font-size: 30px;
+    align-self: center;
 }
