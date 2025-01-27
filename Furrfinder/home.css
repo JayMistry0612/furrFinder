@@ -180,8 +180,8 @@ nav {
 #navbar-bottom {
     /* display: none; */
     z-index: 100;
-    opacity: 0;
-    transform: translateY(-10px);
+    /* opacity: 0; */
+    transform: translateY(0px);
     transition: all 0.3s ease;
 }
 
@@ -470,12 +470,41 @@ nav {
     background-color: white;
 }
 
+#section-2 .pets #pets-option .pets-names div {
+    position: relative;
+
+}
+
+#section-2 .pets #pets-option .pets-names div span {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.404);
+}
+
+#section-2 .pets #pets-option .pets-names div span:hover {
+    background-color: rgba(255, 255, 255, 0.612);
+
+}
+
+#section-2 .pets #pets-option .pets-names div span a i {
+    font-size: 25px;
+    color: red;
+}
+
 #section-2 .pets #pets-option .pets-names p {
     font-size: 20px;
     font-weight: 600;
 }
 
-#section-2 .pets #pets-option .pets-names img {
+#section-2 .pets #pets-option .pets-names img,
+#section-2 .pets #pets-option .pets-names {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+}
+
+#section-2 .pets #pets-option .pets-names:hover {
+    cursor: pointer;
 }

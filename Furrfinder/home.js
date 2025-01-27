@@ -7,7 +7,7 @@ getPets.addEventListener("click", () => {
         navbarBottom.classList.toggle("hidden");
         // navbarBottom.style.display = "block";
         navbarBottom.style.opacity = "1"
-        navbarBottom.style.transform = "translateY(10px)"
+        navbarBottom.style.transform = "translateY(0px)"
         navbarBottom.style.transform = "all 1s ease"
     }
     else {
