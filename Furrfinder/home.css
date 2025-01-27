@@ -437,6 +437,7 @@ nav {
     grid-template-columns: repeat(4, 1fr);
     /* 4 columns for large screens */
     gap: 30px;
+    margin-bottom: 150px;
 
 }
 
@@ -507,4 +508,214 @@ nav {
 
 #section-2 .pets #pets-option .pets-names:hover {
     cursor: pointer;
+}
+
+/* informative section */
+
+#section-3 {
+    background: white;
+    margin-top: 50px;
+}
+
+#section-3 .informative {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-3 .informative p {
+    color: rgb(107, 105, 105);
+    font-size: 50px;
+    font-weight: 400;
+    font-style: bold;
+    text-align: center;
+}
+
+#section-3 .informative .cards {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-3 .informative .cards .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+    gap: 20px;
+    height: 50vh;
+    width: 30%;
+
+}
+
+#section-3 .informative .cards .card a {
+    text-decoration: none;
+    color: rgb(86, 16, 152);
+    font-style: bold;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+
+#section-3 .informative .cards .card p {
+    font-size: 20px;
+    text-align: center;
+    font-style: bold;
+}
+
+#section-3 .informative .cards .card button {
+    color: rgb(86, 16, 152);
+    border: 2px solid rgb(86, 16, 152);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+#section-3 .informative .cards .card:hover button {
+    color: white;
+    background-color: rgb(86, 16, 152);
+}
+
+@media (max-width: 768px) {
+    #section-3 .informative .cards {
+        flex-direction: column;
+    }
+
+    #section-3 .informative .cards .card {
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 280px) {
+    #section-3 .informative .cards .card {
+        height: fit-content;
+    }
+
+    #section-3 .informative .cards .card button {
+        padding: 5px;
+    }
+
+    #section-3 .informative p {
+        font-size: 15px;
+    }
+
+    #section-3 .informative .cards .card p {
+        font-size: 10px;
+        text-align: center;
+        font-style: bold;
+    }
+
+}
+
+/* footer */
+
+footer .link {
+    background-color: rgb(86, 16, 152);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: start;
+    padding: 30px 10px;
+    gap: 20px;
+}
+
+@media (max-width:992px) {
+    footer .link {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
+}
+
+footer .link .signup {
+    background-color: white;
+    color: rgb(86, 16, 152);
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+footer .link .signup button {
+    background-color: rgb(86, 16, 152);
+    color: white;
+    font-style: bold;
+    font-weight: 700;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px 35px;
+    border: none;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+footer .link .signup button:hover {
+    background-color: rgb(231, 184, 241);
+    color: rgb(57, 11, 100);
+}
+
+footer .link ul {
+    list-style: none;
+}
+
+footer .link ul p {
+    color: white;
+    font-style: bold;
+    font-weight: 800;
+    /* font-size: 15px; */
+}
+
+footer .link ul li a {
+    text-decoration: none;
+    color: white;
+    font-style: bold;
+}
+
+footer .link ul li a:hover {
+    text-decoration: underline;
+    color: rgb(157, 111, 200);
+}
+
+footer .footer-end {
+    background-color: rgb(46, 9, 80);
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+footer .footer-end .copy span,
+footer .footer-end .copy span a {
+    color: white;
+    font-style: bold;
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+footer .footer-end .social {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+footer .footer-end .social span a {
+    color: white;
+    font-style: bold;
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 15px;
 }
