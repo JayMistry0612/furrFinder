@@ -35,3 +35,14 @@ navbar_icon.addEventListener("click", () => {
         sidenavBar.style.transform = "all 0.1s ease"
     }
 })
+
+document.querySelectorAll(".nav-item").forEach((e) => {
+    e.addEventListener("mouseenter", () => {
+        e.childNodes[3].style.display = "block"
+        document.querySelector(".hero").style.zIndex = "-5"
+    })
+    e.addEventListener("mouseleave", () => {
+        e.childNodes[3].style.display = "none"
+        document.querySelector(".hero").style.zIndex = ""
+    })
+})

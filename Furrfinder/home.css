@@ -217,7 +217,7 @@ nav {
     width: 250px;
     display: none;
     background-color: rgb(77, 7, 143);
-    /* z-index: 1000; */
+    z-index: 1000;
     height: fit-content;
     padding: 20px;
     list-style: none;
@@ -225,9 +225,9 @@ nav {
     text-align: left;
 }
 
-.nav-item:hover .dropdown {
+/* .nav-item:hover .dropdown {
     display: block;
-}
+} */
 
 @media (max-width:822px) {
     #navbar-bottom {
@@ -302,8 +302,7 @@ nav {
 /* todo set the overflow property */
 #section-1 {
     width: 100%;
-    position: relative;
-    z-index: -5;
+
     ;
 }
 
@@ -320,7 +319,9 @@ nav {
     align-items: center;
     padding: 20px;
     border-bottom: 10px solid rgb(86, 16, 152);
+
     position: relative;
+    /* z-index: -5; */
 
 
 }
@@ -445,8 +446,8 @@ nav {
     background-color: rgb(233, 230, 230);
     /* background-color: transparent; */
     padding-top: 200px;
-    position: relative;
-    z-index: -100;
+    /* position: relative; */
+    /* z-index: -10; */
 }
 
 #section-2 .pets {
