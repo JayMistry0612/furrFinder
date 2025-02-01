@@ -1,7 +1,5 @@
 const getPets = document.getElementById("about-pets");
 const navbarBottom = document.getElementById("navbar-bottom");
-const navbar_icon = document.getElementById("nav-icon");
-const sidenavBar = document.getElementById("side-navbar")
 getPets.addEventListener("click", () => {
     if (navbarBottom.classList.contains("hidden")) {
         navbarBottom.classList.toggle("hidden");
@@ -17,4 +15,16 @@ getPets.addEventListener("click", () => {
         navbarBottom.style.transform = "translateY(-10px)"
         navbarBottom.style.transform = "all 1s ease"
     }
+})
+
+document.querySelectorAll(".nav-item").forEach((e) => {
+    // console.log(e.childNodes[3])
+    e.addEventListener("mouseenter", () => {
+        e.childNodes[3].style.display = "block"
+        document.querySelector("main").style.zIndex = "-5"
+    })
+    e.addEventListener("mouseleave", () => {
+        e.childNodes[3].style.display = "none"
+        document.querySelector("main").style.zIndex = ""
+    })
 })
