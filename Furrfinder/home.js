@@ -46,3 +46,18 @@ document.querySelectorAll(".nav-item").forEach((e) => {
         document.querySelector(".hero").style.zIndex = ""
     })
 })
+
+document.querySelectorAll("#side-navbar .side-nav-item li").forEach((e) => {
+    e.addEventListener("click", () => {
+        if (e.children[0].classList.contains("hidden")) {
+            e.children[1].style.display = 'block'
+            e.children[0].classList.toggle("hidden")
+        }
+        else {
+            e.children[1].style.display = 'none'
+            e.children[0].classList.toggle("hidden")
+
+        }
+    })
+})
+
