@@ -6,6 +6,8 @@
     color: rgb(86, 16, 152)
 }
 
+
+
 /* #navbar .navbar-nav #heart i:hover {
     color: red;
 
@@ -370,6 +372,8 @@ nav {
         padding: 5px;
         gap: 10px;
         overflow-x: auto !important;
+        scrollbar-width: none;
+
         ;
     }
 }
@@ -494,6 +498,8 @@ nav {
         gap: 20px;
         overflow-x: auto;
         width: 100%;
+        scrollbar-width: none;
+
     }
 }
 

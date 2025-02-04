@@ -5,8 +5,8 @@ body {
 #navbar-top {
     display: flex;
     justify-content: space-between;
-    margin: 1px 30px;
-    /* padding: 5px 10px; */
+    margin: 1px 0px;
+    padding: 1px 10px;
     background-color: white;
 }
 
@@ -81,6 +81,10 @@ body {
 
 #navbar-top .part-2 #nav-icon {
     display: none;
+}
+
+#navbar-top .part-2 #nav-icon:hover {
+    cursor: pointer;
 }
 
 @media (max-width:882px) {
@@ -189,6 +193,61 @@ body {
 
 }
 
+/* side baar */
+#side-navbar {
+    width: auto;
+    position: absolute;
+    min-height: 100%;
+    background-color: rgb(86, 16, 152);
+    border-radius: 0 5% 0 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    z-index: 10;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 0.5 ease;
+}
+
+#side-navbar .side-nav-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 30px;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+#side-navbar .side-nav-item li a {
+    font-size: small;
+    color: white;
+    text-decoration: none;
+    font-style: bold;
+    font-weight: 500;
+}
+
+#side-navbar .side-nav-item li .nav-sub-item {
+    display: none;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+#side-navbar .side-nav-item li a:hover {
+    color: rgb(158, 104, 183);
+    text-decoration: underline;
+}
+
+#side-navbar .side-nav-item li {
+    list-style: none;
+}
+
+@media (min-width:822px) {
+    #side-navbar {
+        display: none !important;
+    }
+}
+
+
 main {
     position: relative;
     ;
@@ -197,7 +256,7 @@ main {
 
 main .petfinder {
     display: flex;
-    margin: 50px 120px;
+    margin: 50px 20px;
     gap: 30px;
 }
 
@@ -224,13 +283,14 @@ main .petfinder .info .cards {
 }
 
 main .petfinder .info .cards .card {
-    width: 80%;
+    width: 90%;
     background-color: white;
     display: flex;
     flex-direction: column;
     gap: 30px;
     border-radius: 10px;
     margin-top: 20px;
+    height: 350px;
 }
 
 main .petfinder .info .cards .card:hover {
@@ -242,7 +302,7 @@ main .petfinder .info .cards .card img {
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    height: 60%;
+    height: 192px;
 }
 
 main .petfinder .info .cards .card a {
@@ -350,7 +410,7 @@ main .petfinder .aside .part-2 button:hover {
     background-color: black;
 }
 
-@media (max-width: 982px) {
+@media (max-width: 1024px) {
     main .petfinder {
         display: flex;
         margin: 50px 1px;
@@ -405,6 +465,13 @@ main .petfinder .aside .part-2 button:hover {
         padding: 2px 10px;
     }
 
+
+}
+
+@media (max-width:500px) {
+    main .petfinder .aside .part-1 div {
+        width: 100%;
+    }
 
 }
 
