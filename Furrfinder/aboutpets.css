@@ -256,7 +256,7 @@ main {
 
 main .petfinder {
     display: flex;
-    margin: 50px 20px;
+    margin: 50px 30px;
     gap: 30px;
 }
 
@@ -290,7 +290,7 @@ main .petfinder .info .cards .card {
     gap: 30px;
     border-radius: 10px;
     margin-top: 20px;
-    height: 350px;
+    height: 400px;
 }
 
 main .petfinder .info .cards .card:hover {
