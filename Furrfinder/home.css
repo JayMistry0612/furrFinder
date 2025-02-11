@@ -176,15 +176,20 @@ nav {
 
 /* navbar-bottom */
 
-
+nav {
+    position: relative;
+}
 
 #navbar-bottom {
+    /* display: none; */
+    position: absolute;
+    top: 100%;
+    z-index: 100;
+    opacity: 1;
+    /* display: none; */
     width: 100%;
     background-color: rgb(86, 16, 152);
-    /* display: none; */
     padding: 20px 0;
-    z-index: 100;
-    /* opacity: 0; */
     transform: translateY(0px);
     transition: all 0.3s ease;
 }
@@ -313,8 +318,7 @@ nav {
 #section-1 {
     width: 100%;
     position: relative;
-
-    ;
+    margin-top: 50px;
 }
 
 

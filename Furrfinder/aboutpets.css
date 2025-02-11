@@ -117,12 +117,17 @@ body {
 }
 
 /* navbar-bottom */
-
+nav {
+    position: relative;
+}
 
 #navbar-bottom {
     /* display: none; */
+    position: absolute;
+    top: 100%;
     z-index: 100;
-    /* opacity: 0; */
+    opacity: 0;
+    /* display: none; */
     width: 100%;
     background-color: rgb(86, 16, 152);
     padding: 20px 0;
