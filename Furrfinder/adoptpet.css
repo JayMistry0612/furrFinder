@@ -288,21 +288,21 @@ main .petfinder .info .text {
 main .petfinder .info .about-pet-adoption {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
 
 }
 
 main .petfinder .info .about-pet-adoption>a {
     color: rgb(52, 45, 45);
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 500;
     margin-top: 50px;
 
 }
 
-main .petfinder .info .about-pet-adoption a span {
+main .petfinder .info .about-pet-adoption>a>span {
     color: rgb(86, 16, 152);
 }
 
@@ -311,7 +311,7 @@ main .petfinder .info .about-pet-adoption a:hover {
 }
 
 main .petfinder .info .about-pet-adoption-cards {
-    margin-top: 50px;
+    /* margin-top: 50px; */
     display: grid;
     grid-template-rows: repeat(1);
     grid-template-columns: repeat(3, 1fr);
@@ -343,14 +343,16 @@ main .petfinder .info .about-pet-adoption-cards .cards img {
 
 main .petfinder .info .about-pet-adoption-cards .cards a {
     text-decoration: none;
-    color: rgb(164, 160, 160);
+    color: rgb(127, 123, 123);
     padding: 2px 10px;
+    font-weight: 600;
+    font-size: 16px;
 
 }
 
 main .petfinder .info .about-pet-adoption-cards .cards p {
     color: rgb(86, 16, 152);
-    font-weight: 800;
+    font-weight: 600;
     font-style: bold;
     font-size: 20px;
     line-height: 30px;
@@ -467,7 +469,7 @@ main .petfinder .aside .part-2 button:hover {
     }
 
     main .petfinder .info .about-pet-adoption-cards {
-        margin-top: 50px;
+        /* margin-top: 50px; */
         /* gap: 20px; */
         display: flex;
         flex-direction: column;
@@ -477,7 +479,7 @@ main .petfinder .aside .part-2 button:hover {
         width: 100%;
         background-color: white;
         flex-direction: row;
-        align-items: start;
+        align-items: center;
         gap: 10px;
         border-radius: 10px;
         margin-top: 20px;
@@ -488,13 +490,13 @@ main .petfinder .aside .part-2 button:hover {
         width: 30%;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-        height: 100px;
+        height: auto;
     }
 
     main .petfinder .info .about-pet-adoption-cards .cards div {
         display: flex;
         flex-direction: column;
-        margin: 0px 20px;
+        margin: 0px 10px;
         justify-content: start;
         align-items: start;
     }
@@ -502,11 +504,12 @@ main .petfinder .aside .part-2 button:hover {
 
     main .petfinder .info .about-pet-adoption .cards p {
         color: rgb(86, 16, 152);
-        font-weight: 700;
+        font-weight: 400;
         font-style: bold;
         font-size: 20px;
         line-height: 20px;
         padding: 0px 10px;
+        text-align: justify;
     }
 
 
@@ -523,7 +526,7 @@ main .petfinder .aside .part-2 button:hover {
 
     main .petfinder .info .about-pet-adoption .cards p,
     main .petfinder .info .about-pet-adoption .cards>div>a {
-        max-width: 150px;
+        max-width: 100px;
         text-overflow: ellipsis;
         display: inline-block;
         overflow: hidden;
@@ -531,7 +534,7 @@ main .petfinder .aside .part-2 button:hover {
     }
 
     main .petfinder .info .about-pet-adoption-cards .cards img {
-        width: 50%;
+        width: 40%;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         height: 100px;
