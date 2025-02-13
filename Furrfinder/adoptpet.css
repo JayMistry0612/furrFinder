@@ -2,11 +2,15 @@ body {
     background-color: rgb(234, 234, 234);
 }
 
+nav {
+    position: relative;
+}
+
 #navbar-top {
     display: flex;
     justify-content: space-between;
     margin: 1px 0px;
-    padding: 1px 10px;
+    padding: 10px 10px;
     background-color: white;
 }
 
@@ -117,9 +121,7 @@ body {
 }
 
 /* navbar-bottom */
-nav {
-    position: relative;
-}
+
 
 #navbar-bottom {
     /* display: none; */
@@ -253,6 +255,10 @@ nav {
 }
 
 
+
+/* main section */
+
+
 main {
     position: relative;
     ;
@@ -279,15 +285,40 @@ main .petfinder .info .text {
     box-shadow: 1px 1px 1px rgb(199, 195, 195);
 }
 
-main .petfinder .info .cards {
+main .petfinder .info .about-pet-adoption {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+}
+
+main .petfinder .info .about-pet-adoption>a {
+    color: rgb(52, 45, 45);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
     margin-top: 50px;
+
+}
+
+main .petfinder .info .about-pet-adoption>a>span {
+    color: rgb(86, 16, 152);
+}
+
+main .petfinder .info .about-pet-adoption a:hover {
+    text-decoration: underline;
+}
+
+main .petfinder .info .about-pet-adoption-cards {
+    /* margin-top: 50px; */
     display: grid;
-    grid-template-rows: repeat(2);
+    grid-template-rows: repeat(1);
     grid-template-columns: repeat(3, 1fr);
     /* gap: 20px; */
 }
 
-main .petfinder .info .cards .card {
+main .petfinder .info .about-pet-adoption-cards .cards {
     width: 90%;
     background-color: white;
     display: flex;
@@ -298,28 +329,30 @@ main .petfinder .info .cards .card {
     height: 400px;
 }
 
-main .petfinder .info .cards .card:hover {
+main .petfinder .info .about-pet-adoption-cards .cards:hover {
     cursor: pointer;
     border: 2px solid rgb(86, 16, 152);
 }
 
-main .petfinder .info .cards .card img {
+main .petfinder .info .about-pet-adoption-cards .cards img {
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     height: 192px;
 }
 
-main .petfinder .info .cards .card a {
+main .petfinder .info .about-pet-adoption-cards .cards a {
     text-decoration: none;
-    color: rgb(164, 160, 160);
+    color: rgb(127, 123, 123);
     padding: 2px 10px;
+    font-weight: 600;
+    font-size: 16px;
 
 }
 
-main .petfinder .info .cards .card p {
+main .petfinder .info .about-pet-adoption-cards .cards p {
     color: rgb(86, 16, 152);
-    font-weight: 800;
+    font-weight: 600;
     font-style: bold;
     font-size: 20px;
     line-height: 30px;
@@ -430,44 +463,53 @@ main .petfinder .aside .part-2 button:hover {
 }
 
 @media (max-width: 767px) {
-    main .petfinder .info .cards {
-        margin-top: 50px;
+    main .petfinder .info .about-pet-adoption a {
+        font-size: 18px;
+
+    }
+
+    main .petfinder .info .about-pet-adoption-cards {
+        /* margin-top: 50px; */
         /* gap: 20px; */
         display: flex;
         flex-direction: column;
     }
 
-    main .petfinder .info .cards .card {
+    main .petfinder .info .about-pet-adoption-cards .cards {
         width: 100%;
         background-color: white;
-        display: flex;
         flex-direction: row;
+        align-items: center;
         gap: 10px;
         border-radius: 10px;
         margin-top: 20px;
-        height: 40%;
+        height: fit-content;
     }
 
-    main .petfinder .info .cards .card img {
-        width: 50%;
+    main .petfinder .info .about-pet-adoption-cards .cards img {
+        width: 30%;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-        height: 60%;
+        height: auto;
     }
 
-    main .petfinder .info .cards .card div {
+    main .petfinder .info .about-pet-adoption-cards .cards div {
         display: flex;
         flex-direction: column;
-        margin: 20px;
+        margin: 0px 10px;
+        justify-content: start;
+        align-items: start;
     }
 
-    main .petfinder .info .cards .card p {
+
+    main .petfinder .info .about-pet-adoption .cards p {
         color: rgb(86, 16, 152);
-        font-weight: 600;
+        font-weight: 400;
         font-style: bold;
-        font-size: 15px;
-        line-height: 30px;
-        padding: 2px 10px;
+        font-size: 20px;
+        line-height: 20px;
+        padding: 0px 10px;
+        text-align: justify;
     }
 
 
@@ -479,6 +521,137 @@ main .petfinder .aside .part-2 button:hover {
     }
 
 }
+
+@media (max-width:350px) {
+
+    main .petfinder .info .about-pet-adoption .cards p,
+    main .petfinder .info .about-pet-adoption .cards>div>a {
+        max-width: 100px;
+        text-overflow: ellipsis;
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    main .petfinder .info .about-pet-adoption-cards .cards img {
+        width: 40%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        height: 100px;
+    }
+
+
+
+
+}
+
+
+#section-2 {
+    /* background-color: rgb(233, 230, 230); */
+    background-color: transparent;
+    padding-top: 200px;
+    /* position: relative; */
+    /* z-index: -10; */
+}
+
+#section-2 .pets {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#section-2 .pets p {
+    color: rgb(86, 16, 152);
+    font-size: 40px;
+    font-style: bold;
+    font-weight: 400;
+}
+
+#section-2 .pets #pets-option {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columns for large screens */
+    gap: 30px;
+    margin-bottom: 150px;
+
+}
+
+@media (max-width: 992px) {
+    #section-2 .pets #pets-option {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 650px) {
+    #section-2 .pets #pets-option {
+        margin-top: 50px;
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+        width: 100%;
+        scrollbar-width: none;
+
+    }
+}
+
+
+
+
+#section-2 .pets #pets-option .pets-names {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 10px;
+    background-color: white;
+}
+
+#section-2 .pets #pets-option .pets-names div {
+    position: relative;
+
+}
+
+#section-2 .pets #pets-option .pets-names div span {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.404);
+}
+
+#section-2 .pets #pets-option .pets-names div span:hover {
+    background-color: rgba(255, 255, 255, 0.612);
+
+}
+
+#section-2 .pets #pets-option .pets-names div span a i {
+    font-size: 25px;
+    color: red;
+}
+
+#section-2 .pets #pets-option .pets-names p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#section-2 .pets #pets-option .pets-names img,
+#section-2 .pets #pets-option .pets-names {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#section-2 .pets #pets-option .pets-names:hover {
+    cursor: pointer;
+}
+
+
+
 
 
 

@@ -46,3 +46,45 @@ document.querySelectorAll(".nav-item").forEach((e) => {
         document.querySelector(".hero").style.zIndex = ""
     })
 })
+
+document.querySelectorAll("#side-navbar .side-nav-item li").forEach((e) => {
+    e.addEventListener("click", () => {
+        if (e.children[0].classList.contains("hidden")) {
+            e.children[1].style.display = 'block'
+            e.children[0].classList.toggle("hidden")
+        }
+        else {
+            e.children[1].style.display = 'none'
+            e.children[0].classList.toggle("hidden")
+
+        }
+    })
+})
+
+
+const images = [
+    "./assest/dogs-cats.jpg",
+    "./assest/hero-2.webp",
+    "./assest/hero-3.webp"
+];
+
+let currentIndex = 0;
+const bgElement = document.querySelector("#section-1 .caorusel-bg");
+console.log(bgElement)
+
+function changeBackground() {
+    bgElement.style.opacity = 0;
+
+    setTimeout(() => {
+        bgElement.style.backgroundImage = `url(${images[currentIndex]})`;
+        bgElement.style.opacity = 1;
+        currentIndex = (currentIndex + 1) % images.length;
+    }, 1000);
+}
+
+setInterval(changeBackground, 3000);
+
+
+bgElement.style.backgroundImage = `url(${images[2]})`;
+
+

@@ -5,7 +5,7 @@ const sidenavBar = document.getElementById("side-navbar")
 getPets.addEventListener("click", () => {
     if (navbarBottom.classList.contains("hidden")) {
         navbarBottom.classList.toggle("hidden");
-        // navbarBottom.style.display = "block";
+        navbarBottom.style.display = "block";
         navbarBottom.style.opacity = "1"
         navbarBottom.style.transform = "translateY(0px)"
         navbarBottom.style.transform = "all 1s ease"
