@@ -232,6 +232,13 @@ nav {
     list-style: none;
     border-radius: 10px;
     text-align: left;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.1s ease;
+}
+
+.dropdown li {
+    margin: 10px;
 }
 
 /* .nav-item:hover .dropdown {
@@ -262,7 +269,7 @@ nav {
 #side-navbar {
     width: auto;
     position: absolute;
-    min-height: 100%;
+    min-height: 100vh;
     background-color: rgb(86, 16, 152);
     border-radius: 0 5% 0 0;
     margin-top: 20px;
@@ -371,6 +378,7 @@ nav {
     gap: 20px;
     background-color: white;
     border-radius: 10px;
+    margin-top: 50px;
 }
 
 #section-1 .hero .search #search-bar {
@@ -450,10 +458,16 @@ nav {
     box-shadow: 0px 10px gray;
 }
 
+#section-1 .hero .animal-option .options p a {
+    pointer-events: none;
+}
+
 #section-1 .hero .animal-option .options:hover {
     border: 2px solid rgb(86, 16, 152);
     background-color: rgb(241, 238, 238);
     cursor: pointer;
+    transform: translateY(-10px);
+    transition: transform 0.5s ease;
 }
 
 #section-1 .hero .animal-option .options span {
@@ -541,11 +555,20 @@ nav {
     border-radius: 10px;
     gap: 10px;
     background-color: white;
+    border: 2px solid rgba(132, 129, 129, 0.404);
+    box-shadow: 5px 2px 5px rgba(132, 129, 129, 0.404);
 }
 
 #section-2 .pets #pets-option .pets-names div {
     position: relative;
 
+
+}
+
+#section-2 .pets #pets-option .pets-names:hover {
+    transform: translateY(-10px);
+    transition: transform 0.1s ease-in;
+    border: 2px solid rgb(86, 16, 152);
 }
 
 #section-2 .pets #pets-option .pets-names div span {
@@ -567,9 +590,13 @@ nav {
     color: red;
 }
 
-#section-2 .pets #pets-option .pets-names p {
+#section-2 .pets #pets-option .pets-names>p {
+    position: relative;
+    z-index: 10;
     font-size: 20px;
     font-weight: 600;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
 }
 
 #section-2 .pets #pets-option .pets-names img,

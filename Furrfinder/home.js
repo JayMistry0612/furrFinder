@@ -37,12 +37,18 @@ navbar_icon.addEventListener("click", () => {
 })
 
 document.querySelectorAll(".nav-item").forEach((e) => {
+    console.log(e.children)
     e.addEventListener("mouseenter", () => {
-        e.childNodes[3].style.display = "block"
+        e.children[1].style.display = "block"
+        e.children[1].style.opacity = "1"
+        e.children[1].style.transform = "translateY(0px)"
         document.querySelector(".hero").style.zIndex = "-5"
     })
     e.addEventListener("mouseleave", () => {
-        e.childNodes[3].style.display = "none"
+        e.children[1].style.opacity = "0"
+        e.children[1].style.transform = "translateY(-20px)"
+        e.children[1].style.display = "none"
+
         document.querySelector(".hero").style.zIndex = ""
     })
 })
