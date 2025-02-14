@@ -94,3 +94,35 @@ setInterval(changeBackground, 3000);
 bgElement.style.backgroundImage = `url(${images[2]})`;
 
 
+
+
+
+// for pets nrar by
+
+// const petsNames = document.querySelectorAll("#section-2 .pets #pets-option  .pets-names");
+// console.log(petsNames)
+
+// let cuI = 0
+// function scroll() {
+//     petsNames.forEach(ele => {
+//         console.log(ele)
+//         if (cuI > 3) {
+//             ele.style.transform = `-translateX(${0}px)`
+//             cuI = 0
+//         }
+//         else if (cuI < 3) {
+//             ele.style.transform = `-translateX(${ele.clientWidth}px)`
+//             cuI = cuI + 1
+
+//         }
+//     })
+
+
+// }
+// setInterval(() => {
+//     scroll()
+// }, 1000);
+
+
+
+
