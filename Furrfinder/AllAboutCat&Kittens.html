@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Cat&Kittens.css">
+</head>
+
+<body>
+
+    <nav>
+        <div id="navbar-top">
+            <div class="part-1">
+                <h2 id="logo">
+                    <a href="home.html"> FURRFINDER</a>
+                </h2>
+                <h2 id="about-pets">
+                    <a href="#" style="color:  rgb(86, 16, 152)!important;"> ALL ABOUT PETS <i
+                            class="fa-solid fa-caret-down"></i></a>
+                </h2>
+            </div>
+            <div class="part-2">
+                <a href="#">
+                    <span id="heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </span>
+                </a>
+                <button type="button">
+                    <a href="#"> <span><i class="fa-solid fa-user"></i></span></a>
+                    <span><a href="#">SIGN IN</a></span>
+                </button>
+                <span id="nav-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+            </div>
+
+        </div>
+        <!-- navbar-bottom -->
+
+        <div id="navbar-bottom" class="hidden">
+            <ul class="nav-items">
+                <li class="nav-item">
+                    <a href="#">ADOPT OR GET INVOLVED</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="aboutpets.html">About Petfinder</a>
+                        </li>
+                        <li>
+                            <a href="#">Adopting pets</a>
+                        </li>
+                        <li>
+                            <a href="#">Animal Shelter and rescues</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#">DOG AND PUPPIES</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="#">About Petfinder</a>
+                        </li>
+                        <li>
+                            <a href="#">Adopting pets</a>
+                        </li>
+                        <li>
+                            <a href="#">Animal Shelter and rescues</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#">CATS AND KITTENS</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="#">About Petfinder</a>
+                        </li>
+                        <li>
+                            <a href="#">Adopting pets</a>
+                        </li>
+                        <li>
+                            <a href="#">Animal Shelter and rescues</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+        <!-- side bar -->
+        <div id="side-navbar" class="hidden">
+            <ul class="side-nav-item">
+                <li>
+                    <a href="#" class="hidden">ADOPT OR GET INVOLVED <i class="fa-solid fa-caret-down"></i></a></a>
+                    <ul class="nav-sub-item">
+                        <li>
+                            <a href="aboutpets.html">About pet finder </a>
+                        </li>
+                        <li>
+                            <a href="#">Adopting pets</a>
+                        </li>
+                        <li>
+                            <a href="#">Animal shelter and rescues</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="hidden">DOG AND PUPPIES <i class="fa-solid fa-caret-down"></i></a></a>
+                    <ul class="nav-sub-item">
+                        <li>
+                            <a href="#">About pet hello</a>
+                        </li>
+                        <li>
+                            <a href="#">Adopting pets</a>
+                        </li>
+                        <li>
+                            <a href="#">Animal shelter and rescues</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="hidden">CATS AND KITTENS <i class="fa-solid fa-caret-down"></i></a></a>
+                    <ul class="nav-sub-item">
+                        <li>
+                            <a href="#">About pet hello</a>
+                        </li>
+                        <li>
+                            <a href="#">Adopting pets</a>
+                        </li>
+                        <li>
+                            <a href="#">Animal shelter and rescues</a>
+                        </li>
+
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+    <!-- Path -->
+    <div id="Path" style="position:relative;padding-left:60px;padding-top:10px;">
+        <a href="home.html" class="link" style="text-decoration:underline;"> Home </a>
+        <a href="#" class="link working_page">
+            &gt Cats and Kittens</a>
+    </div>
+    <h1 style="color:dimgray; margin-top:10px;margin-left:50px">Cats & Kittens</h1>
+    <main>
+        <div class="petfinder">
+            <div class="info">
+                <div class="text">
+                    <p>Welcome to our Cats & Kittens articles, your go-to resource for all things feline! Our
+                        informative articles
+                        cover many topics, including kitten care, cat behavior and common health issues. Whether you’re
+                        a seasoned
+                        cat owner or considering adopting a new furry friend, our experts and experienced cat owners
+                        have compiled a
+                        collection of articles just for you. We’ve got you covered, from litter box training to dealing
+                        with
+                        hairballs. Explore our articles and discover how we can help you provide the best care for your
+                        beloved cat
+                        today.</p>
+                </div>
+                <div class="sections">
+                    <h2 class="h2_tag">Cat Adoption</h2>
+                    &nbsp; &nbsp;
+                    <a class="a_tag link" href="cat_adoption.html">VIEW ALL </a>
+                    &nbsp;
+                    <a class="link" style="text-decoration: none !important;"> &gt </a>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <img src="./assest/cat_adoption1.webp" alt="">
+                        <div>
+                            <a href="#">FINDING A CAT</a>
+                            <P>
+                                How to Adopt a Cat : Step-By-Step Guide
+                            </P>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <img src="./assest/cat_adoption2.webp" alt="">
+                        <div>
+                            <a href="#">FINDING A CAT</a>
+                            <P>
+                                Where Can You Adopt a Cat? Difference Among Rescues, Shelters and Sanctuaries
+                            </P>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <img src="./assest/cat_adoption3.webp" alt="">
+                        <div>
+                            <a href="#">YOUR NEW CAT</a>
+                            <P>
+                                Why Should My Cat Wear a Collar and Tag?
+                            </P>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="sections">
+                    <h2 class="h2_tag">Cat Breeds</h2>
+                    &nbsp; &nbsp;
+                    <a class="a_tag link" href="CatBreed.html">VIEW ALL </a>
+                    &nbsp;
+                    <a class="link" style="text-decoration: none !important;"> &gt </a>
+                </div>
+                <div class="cards">
+                    <div class="card breed_card">
+                        <img src="./assest/Abyssinian Cat 1_0.webp" alt="" style="height: 42% !important;">
+                        <div>
+                            <a href="#" class="breed_a">Abyssinian</a>
+                            <P class="breed_p">
+                                Abyssinian cats are striking felines that look like they just waltzed in from the jungle
+                                with lithe, athletic bodies and a glossy, ticked coat that gives them the appearance of
+                                shimmering. They have muscular builds, wedge-shaped heads, and stunning almond-shaped
+                                eyes with large ears, small oval feet, and a long, slender tail.
+                            </P>
+                            <hr>
+                            </hr>
+                            <a class="breed_footer">View available for adoption</a>
+                        </div>
+
+                    </div>
+                    <div class="card breed_card">
+                        <img src="./assest/American Bobtail Cat 1.webp" alt="">
+                        <div>
+                            <a href="#" class="breed_a">American Bobtail</a>
+                            <P class="breed_p">
+                                Large and solid, the American Bobtail cat is muscular and powerful. It has a bobbed or
+                                short tail, a broad head, and wide eyes. Their coats can be short and thick or long and
+                                shaggy, usually in a brown or gray color with tabby patterns. While they look wild, they
+                                are fully companion cats, happy to curl up in a lap or watch the world outside through a
+                                window.
+                            </P>
+                            <hr>
+                            </hr>
+                            <a class="breed_footer">View available for adoption</a>
+                        </div>
+
+                    </div>
+                    <div class="card breed_card">
+                        <img src="./assest/Amer Curl Cat 1_0.webp" alt="">
+                        <div>
+                            <a href="#" class="breed_a">American Curl</a>
+                            <P class="breed_p">
+                                American Curl cats are named as such for their unique curled ears. They are athletic,
+                                proportionate, and graceful cats. They thrive on owner interaction and get along well
+                                with dogs, cats, and humans, including children. While not overly clingy, they love
+                                being near their families and are content to observe. They love to play games and might
+                                even be able to pick up the basics of fetch.
+                            </P>
+                            <hr>
+                            </hr>
+                            <a class="breed_footer">View available for adoption</a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="sections">
+                    <h2 class="h2_tag">Cat Behavior</h2>
+                    &nbsp; &nbsp;
+                    <a class="a_tag link" href="catbehaviour.html">VIEW ALL </a>
+                    &nbsp;
+                    <a class="link" style="text-decoration: none !important;"> &gt </a>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <img src="./assest/cat_behavior1.png" alt="">
+                        <div>
+                            <a href="#">SOCIALIZING</a>
+                            <P>
+                                Do Dogs & Cate Take on Theur Owener's Personality?
+                            </P>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <img src="./assest/cat_behavior2.webp" alt="">
+                        <div>
+                            <a href="#">PROBLEMS</a>
+                            <P>
+                                Will Cats Stop Spraying After Being Neutered?
+                            </P>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <img src="./assest/cat_behavior3.webp" alt="">
+                        <div>
+                            <a href="#">PLAYING</a>
+                            <P>
+                                Planning the Perfect Cat Play Date
+                            </P>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="sections">
+                    <p>Recently Viewed Pets &gt</p>
+                </div>
+                <div class="cards">
+                    <div>
+                    </div>
+                    <div class="card" style="width:100%;height: 100% !important;">
+                        <img src="./assest/download.jpg" alt="" style="height:80% !important; border-bottom-left-radius: 30px!important;border-bottom-right-radius: 30px!important;">
+                        <div>
+                            <P style="text-align: center;">
+                                Cleopatra
+                            </P>
+                        </div>
+                    </div>
+                    <div>
+                    </div>
+
+                </div>
+
+                <div class="sections">
+                    <h2 class="h2_tag">Cat Health & Wellness</h2>
+                    &nbsp; &nbsp;
+                    <a class="a_tag link" href="cathealth.html">VIEW ALL </a>
+                    &nbsp;
+                    <a class="link" style="text-decoration: none !important;"> &gt </a>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <img src="./assest/cat_health1.png" alt="">
+                        <div>
+                            <a href="#">HEALTH CONCERNS</a>
+                            <P>
+                                Tips for Managing Cat Illnesses
+                            </P>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <img src="./assest/cat_health2.webp" alt="">
+                        <div>
+                            <a href="#">HEALTH CONCERNS</a>
+                            <P>
+                                What Is Cat Huffing and Is It Safe
+                            </P>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <img src="./assest/cat_health3.webp" alt="">
+                        <div>
+                            <a href="#">VACCINATION & SHOTS</a>
+                            <P>
+                                Vaccine Related Sarcomas
+                            </P>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="sections">
+                    <h2 class="h2_tag">Cat Training</h2>
+                    &nbsp; &nbsp;
+                    <a class="a_tag link" href="cattraining.html">VIEW ALL </a>
+                    &nbsp;
+                    <a class="link" style="text-decoration: none !important;"> &gt </a>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <img src="./assest/cat_health1.png" alt="">
+                        <div>
+                            <a href="#">LITTER BIX TRAINING</a>
+                            <P>
+                                Why my house doesn't smell like cats
+                            </P>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <img src="./assest/cat_training1.webp" alt="">
+                        <div>
+                            <a href="#">GENERAL TRAINING</a>
+                            <P>
+                                Get Your Cat to Like His Carrier
+                            </P>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <img src="./assest/cat_training1.webp" alt="">
+                        <div>
+                            <a href="#">GENERAL TRAINING</a>
+                            <P>
+                                Trip to Crate Train a Cat
+                            </P>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="sections">
+                    <h2 class="h2_tag">Feeding Your Cat</h2>
+                    &nbsp; &nbsp;
+                    <a class="a_tag link" href="cat_feeding.html">VIEW ALL </a>
+                    &nbsp;
+                    <a class="link" style="text-decoration: none !important;"> &gt </a>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <img src="./assest/cat_feeding1.webp" alt="">
+                        <div>
+                            <a href="#">WHAT CAN CATS EAT?</a>
+                            <P>
+                                Cat Cats Eat Apples?
+                            </P>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <img src="./assest/cat_feeding2.webp" alt="">
+                        <div>
+                            <a href="#">WHAT CAN CATS EAT?</a>
+                            <P>
+                                Cat Cats Eat Apples?
+                            </P>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <img src="./assest/cat_feeding3.webp" alt="">
+                        <div>
+                            <a href="#">WHAT CAN CATS EAT?</a>
+                            <P>
+                                Cat Cats Eat Apples?
+                            </P>
+                        </div>
+                    </div>
+                </div>
+                <div class="sections">
+                    <h2 class="h2_tag">Other Cat Information</h2>
+                    &nbsp; &nbsp;
+                    <a class="a_tag link" href="catinfo.html">VIEW ALL </a>
+                    &nbsp;
+                    <a class="link" style="text-decoration: none !important;"> &gt </a>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <img src="./assest/cat_health1.png" alt="">
+                        <div>
+                            <a href="#">LOTS & FOUND CATS</a>
+                            <P>
+                                What to do if You Find a Lost Cat
+                            </P>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <img src="./assest/cat_info1.webp" alt="">
+                        <div>
+                            <a href="#">LOTS & FOUND CATS</a>
+                            <P>
+                                What to do if You Find a Lost Cat
+                            </P>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./assest/cat_info2.webp" alt="">
+                        <div>
+                            <a href="#">FERAL & STRAY CATS</a>
+                            <P>
+                                Winter Care and Safety for Feral & Stray Cats
+                            </P>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="aside">
+                <div class="part-1">
+                    <div>
+                        <img src="./assest/aboutpetfinder-4.webp" alt="">
+                    </div>
+                    <div>
+                        <h2>Find Your best match</h2>
+                        <p>It takes only 60 seconds</p>
+                        <button>GET STARTED</button>
+                    </div>
+                </div>
+                <div class="part-2">
+                    <p>Find Pet-Adoption Groups</p>
+                    <input type="text" id="location" placeholder="Location">
+                    <input type="text" id="grp-name" placeholder="Group Name">
+
+                    <button>Search</button>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="link">
+
+            <div class="signup">
+                <p>To get the latest update. sign up for the petfinder newsletter</p>
+                <button>
+                    SIGN UP
+                </button>
+            </div>
+
+            <ul>
+                <p>ADOPT OR GET INVOLVED</p>
+                <li><a href="#">All Adopt or Get Involved</a></li>
+                <li><a href="#">Adopting Pets</a></li>
+                <li><a href="#">Animal Shelters & Rescues</a></li>
+                <li><a href="#">Contact US</a></li>
+            </ul>
+            <ul>
+                <p>ABOUT CATS AND KITTENS</p>
+                <li><a href="#">All About Cats & Kittens</a></li>
+                <li><a href="#">Cat Adoption</a></li>
+                <li><a href="#">Cat Breeds</a></li>
+                <li><a href="#">Feeding Your Cat</a></li>
+                <li><a href="#">Cat Behavior</a></li>
+                <li><a href="#">Cat Health & Wellness</a></li>
+                <li><a href="#">Cat Training</a></li>
+            </ul>
+            <ul>
+                <p>ABOUT DOGS AND PUPPIES</p>
+                <li><a href="#">All About Dogs & Puppies</a></li>
+                <li><a href="#">Dog Adoption</a></li>
+                <li><a href="#">Dog Breeds</a></li>
+                <li><a href="#">Feeding Your Dog</a></li>
+                <li><a href="#">Dog Behavior</a></li>
+                <li><a href="#">Dog Health & Wellnessr</a></li>
+                <li><a href="#">Dog Training</a></li>
+            </ul>
+            <ul>
+                <p>RESOURCE</p>
+                <li><a href="#">FAQS</a></li>
+                <li><a href="#">Mobile App Download</a></li>
+                <li><a href="#">Patnerships</a></li>
+                <li><a href="#">News Center</a></li>
+                <li><a href="#">Contact US</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer-end">
+            <div class="copy">
+                <span>
+                    <i class="fa-regular fa-copyright"></i><a href="home.html">2025 FurrFinder.com</a>
+                </span>
+            </div>
+            <div class="social">
+                <span>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </span>
+                <span>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </span>
+                <span>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </span>
+                <span>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </span>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="Cat&Kittens.js"></script>
+</body>
+
+</html>
