@@ -8,54 +8,7 @@
 
 
 
-/* #navbar .navbar-nav #heart i:hover {
-    color: red;
 
-}
-
-#navbar .navbar-nav #signin-button .btn {
-    color: white !important;
-    background-color: rgb(86, 16, 152);
-    font-style: bold !important;
-    font-weight: 600;
-    font-size: 15px;
-}
-
-.dropdown-menu {
-    width: 100vw;
-    left: 0;
-    right: 0;
-}
-
-.dropdown-menu {
-    text-align: center;
-}
-
-.dropdown-menu a.dropdown-item {
-    white-space: nowrap;
-    color: white !important;
-
-}
-
-.dropdown-menu a.dropdown-item:hover {
-    color: rgb(136, 94, 155) !important;
-    background-color: transparent;
-    text-decoration: underline;
-}
-
-#navbar .dropdown .dropdown-menu {
-    background-color: rgb(86, 16, 152) !important;
-}
-
-.navbar-brand {
-    color: rgb(86, 16, 152) !important;
-    font-weight: 800;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-} */
 
 
 
