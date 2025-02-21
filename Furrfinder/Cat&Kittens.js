@@ -9,13 +9,15 @@ getPets.addEventListener("click", () => {
         navbarBottom.style.opacity = "1"
         navbarBottom.style.transform = "translateY(0px)"
         navbarBottom.style.transform = "all 1s ease"
+        document.getElementById("Path").style.zIndex = 0;
     }
     else {
         navbarBottom.classList.toggle("hidden");
         navbarBottom.style.display = "none";
         navbarBottom.style.opacity = "0"
         navbarBottom.style.transform = "translateY(-10px)"
-       navbarBottom.style.transform = "all 1s ease"
+        navbarBottom.style.transform = "all 1s ease"
+        document.getElementById("Path").style.zIndex = 1000;
     }
 })
 

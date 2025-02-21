@@ -204,7 +204,7 @@ nav {
 #side-navbar {
     width: auto;
     position: absolute;
-    min-height: 100%;
+    min-height: 100vh;
     background-color: rgb(86, 16, 152);
     border-radius: 0 5% 0 0;
     margin-top: 20px;
@@ -254,6 +254,18 @@ nav {
     }
 }
 
+.working_page {
+    pointer-events: none;
+    color: dimgrey !important;
+    text-decoration: none;
+}
+
+.link {
+    display: inline;
+    color: rgb(86, 16, 152);
+    font-size: large;
+    cursor: pointer;
+}
 
 
 /* main section */

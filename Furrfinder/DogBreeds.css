@@ -2,11 +2,15 @@ body {
     background-color: rgb(234, 234, 234);
 }
 
+nav {
+    position: relative;
+}
+
 #navbar-top {
     display: flex;
     justify-content: space-between;
     margin: 1px 0px;
-    padding: 1px 10px;
+    padding: 10px 10px;
     background-color: white;
 }
 
@@ -120,10 +124,12 @@ body {
 
 
 #navbar-bottom {
-    position: relative;
     /* display: none; */
+    position: absolute;
+    top: 100%;
     z-index: 100;
-    /* opacity: 0; */
+    opacity: 0;
+    /* display: none; */
     width: 100%;
     background-color: rgb(86, 16, 152);
     padding: 20px 0;
@@ -198,7 +204,7 @@ body {
 #side-navbar {
     width: auto;
     position: absolute;
-    min-height: 100%;
+    min-height: 100vh;
     background-color: rgb(86, 16, 152);
     border-radius: 0 5% 0 0;
     margin-top: 20px;
@@ -247,87 +253,97 @@ body {
         display: none !important;
     }
 }
-#Path{
+
+#Path {
     /* border:1px solid black; */
     margin-bottom: 20px;
     /* padding-left: 15%; */
     display: block;
 }
-.div1 .FInd-Your-Dog{
-    font-size:xx-large;
+
+.div1 .FInd-Your-Dog {
+    font-size: xx-large;
     /* border:1px solid black; */
     text-align: center;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    padding:0px 50px;
+    padding: 0px 50px;
 }
-.working_page{
+
+.working_page {
     pointer-events: none;
-    color:dimgrey !important;
+    color: dimgrey !important;
     text-decoration: none;
 }
-.link{
-    display:inline;
+
+.link {
+    display: inline;
     color: rgb(86, 16, 152);
-    font-size:large;
+    font-size: large;
 }
-.img1{
-    height:400px;
-    width:100%;
+
+.img1 {
+    height: 400px;
+    width: 100%;
 }
-.div1{
-  position: absolute;
-  background-color: rgb(234, 234, 234);
-  height:fit-content;
-  width: 45%;
-  align-items: center;
-  display: flex;
+
+.div1 {
+    position: absolute;
+    background-color: rgb(234, 234, 234);
+    height: fit-content;
+    width: 45%;
+    align-items: center;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  top:100px;
-  left:27%;
-  opacity: 0.8;
-  padding: 15px 0px;
+    top: 100px;
+    left: 27%;
+    opacity: 0.8;
+    padding: 15px 0px;
 }
-.div1 .search-bar{
-    width:90%;
-     height:45px;
+
+.div1 .search-bar {
+    width: 90%;
+    height: 45px;
     background-color: white;
     border-radius: 10px;
-    padding-left:10px;
+    padding-left: 10px;
     cursor: pointer;
 }
-.div1 .search-bar:hover{
-    border:1px solid black;
+
+.div1 .search-bar:hover {
+    border: 1px solid black;
     /* transition: all 2s; */
 }
- .div1 .search-bar p{
+
+.div1 .search-bar p {
     font-size: small;
- }
- html,
-    body {
-      position: relative;
-      height: 100%;
-    }
+}
 
-    body {
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: #000;
-      margin: 0;
-      padding: 0;
-    }
+html,
+body {
+    position: relative;
+    height: 100%;
+}
 
- .swiper {
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
     width: 100%;
     height: 40%;
     margin-top: 40px;
-    padding:0px;
+    padding: 0px;
     margin-bottom: 40px;
-  }
+}
 
-  .swiper-slide {
+.swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -336,31 +352,35 @@ body {
     align-items: center;
     flex-direction: column;
     max-height: 100%;
-  }
+}
 
-  .swiper-slide img {
+.swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  .swiper-slide:hover{
-    background-color: rgb(86, 16, 152);
-  }
-  .swiper-slide:hover .carousel-content{
-    color:white;
-  }
-  .carousel-content{
-    color:dimgrey;
-    font-size:15px;
-  }
+}
 
- .Filter{
+.swiper-slide:hover {
+    background-color: rgb(86, 16, 152);
+}
+
+.swiper-slide:hover .carousel-content {
+    color: white;
+}
+
+.carousel-content {
+    color: dimgrey;
+    font-size: 15px;
+}
+
+.Filter {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
 }
-.size-item{
+
+.size-item {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
     flex: 1 1 calc(50%);
@@ -369,7 +389,8 @@ body {
     text-align: center;
     padding: 20px;
 }
-.Energy-lvl-items{
+
+.Energy-lvl-items {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
     padding: 20px;
@@ -378,13 +399,15 @@ body {
     background-color: white;
     text-align: center;
 }
-.filter-title{
+
+.filter-title {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     margin-top: 10px;
     text-align: center;
 }
-.close-btn{
+
+.close-btn {
     text-decoration: none;
     color: rgb(86, 16, 152);
     font-family: Arial, Helvetica, sans-serif;
@@ -395,7 +418,8 @@ body {
     text-align: center;
     padding: 20px;
 }
-.MyModal{
+
+.MyModal {
     display: flex;
     background-color: #efeef1;
     position: fixed;
@@ -405,12 +429,14 @@ body {
     width: 100%;
     height: 100%;
 }
-.Modal-content{
+
+.Modal-content {
     min-width: 100%;
-    max-height:100vh;
+    max-height: 100vh;
     overflow-y: auto;
 }
-.MyModal-btn{
+
+.MyModal-btn {
     display: none;
     border: rgb(86, 16, 152) 2px solid;
     color: rgb(86, 16, 152);
@@ -419,22 +445,26 @@ body {
     font-weight: bolder;
     font-size: larger;
 }
+
 @media screen and (max-width:767px) {
-    .MyModal-btn{
+    .MyModal-btn {
         display: block !important;
     }
-    .aside{
+
+    .aside {
         display: none !important;
     }
 }
+
 @media screen and (min-width:767px) {
-    .MyModal{
-        display:none !important;
+    .MyModal {
+        display: none !important;
     }
 }
- /* footer */
 
- footer .link {
+/* footer */
+
+footer .link {
     background-color: rgb(86, 16, 152);
     display: flex;
     flex-direction: row-reverse;
@@ -563,38 +593,44 @@ main .petfinder .info .text {
     box-shadow: 1px 1px 1px rgb(199, 195, 195);
 }
 
-.sections{
-    margin-top:40px; 
+.sections {
+    margin-top: 40px;
     margin-bottom: 0px;
 }
-.sections .h2_tag{
-    color:dimgray;
-    display:inline;
+
+.sections .h2_tag {
+    color: dimgray;
+    display: inline;
 }
-.sections .a_tag{
+
+.sections .a_tag {
     font-weight: 700;
     font-size: 20px;
-    margin-bottom:30px;
-    margin-top:15px;
+    margin-bottom: 30px;
+    margin-top: 15px;
     text-decoration: none;
 }
+
 .sections:hover .h2_tag {
-   text-decoration: underline;
+    text-decoration: underline;
 }
+
 .sections:hover .a_tag {
-   text-decoration: underline;
+    text-decoration: underline;
 }
-.sections p{
+
+.sections p {
     color: rgb(86, 16, 152);
     text-align: center;
     font-size: 40px;
 }
-.sections p:hover{
-    color:black;
+
+.sections p:hover {
+    color: black;
 }
 
 main .petfinder .info .cards {
-    margin-top:0px;
+    margin-top: 0px;
     display: grid;
     grid-template-rows: repeat(2);
     grid-template-columns: repeat(3, 1fr);
@@ -613,7 +649,7 @@ main .petfinder .info .cards .card {
     height: 400px;
 }
 
-main .petfinder .info .cards .card:hover{
+main .petfinder .info .cards .card:hover {
     cursor: pointer;
     border: 2px solid rgb(86, 16, 152);
 }
@@ -622,7 +658,7 @@ main .petfinder .info .cards .card img {
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    height:300px;
+    height: 300px;
 }
 
 main .petfinder .info .cards .card a {
@@ -639,55 +675,62 @@ main .petfinder .info .cards .card p {
     font-size: 20px;
     line-height: 30px;
     padding: 2px 10px;
-    display: -webkit-box;                
-    -webkit-box-orient: vertical;      
-    -webkit-line-clamp: 3;             
-    overflow: hidden;                  
-    text-overflow: ellipsis;           
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
+
 .breed_p {
-    color: rgb(164, 160, 160)!important;
+    color: rgb(164, 160, 160) !important;
     font-size: 15px !important;
     font-weight: 600 !important;
     font-style: normal !important;
 }
-.breed_a{
-    color: rgb(86, 16, 152)!important;
+
+.breed_a {
+    color: rgb(86, 16, 152) !important;
     font-weight: 800 !important;
     font-style: bold !important;
-    text-decoration: none!important;
+    text-decoration: none !important;
     padding: 2px 50px !important;
     display: flex;
     justify-content: center !important;
 }
+
 .breed_card:hover .breed_p {
     text-decoration: underline;
 }
+
 .breed_card:hover .breed_a {
-    text-decoration: underline!important;
+    text-decoration: underline !important;
 }
-.breed_footer{
-    color: rgb(86, 16, 152)!important;
+
+.breed_footer {
+    color: rgb(86, 16, 152) !important;
     font-weight: 800 !important;
     font-style: bold !important;
-    text-decoration: none!important;
+    text-decoration: none !important;
     padding: 2px 10px !important;
-    text-align: center!important;
-    display: -webkit-box;                
-    -webkit-box-orient: vertical;      
-    -webkit-line-clamp: 2;  
+    text-align: center !important;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
-.breed_footer:hover{
-    text-decoration: underline!important;
+
+.breed_footer:hover {
+    text-decoration: underline !important;
 }
+
 /* .breed_footer:hover ~ .breed_a{
     text-decoration:none!important;
 }
 .breed_footer:hover ~ .breed_p{
     text-decoration:none!important;
 } */
-.breed_footer:hover{
-    text-decoration: underline!important;
+.breed_footer:hover {
+    text-decoration: underline !important;
 }
 
 main .petfinder .aside {
@@ -782,9 +825,9 @@ main .petfinder .aside .part-2 button:hover {
 }
 
 @media (max-width: 1024px) {
- 
 
-    main .petfinder .info .cards{
+
+    main .petfinder .info .cards {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -817,6 +860,7 @@ main .petfinder .aside .part-2 button:hover {
         border-top-right-radius: 10px;
 
     }
+
     main .petfinder .info .cards .card div {
         display: flex;
         flex-direction: column;
@@ -831,12 +875,13 @@ main .petfinder .aside .part-2 button:hover {
         line-height: 30px;
         padding: 2px 10px;
     }
-    .div1{
+
+    .div1 {
         /* position: absolute;
         background-color: rgb(234, 234, 234); */
-        height:fit-content;
-        width:100%;
-        
+        height: fit-content;
+        width: 100%;
+
         /* align-items: center;
         display: flex;
           flex-direction: column;
@@ -845,7 +890,7 @@ main .petfinder .aside .part-2 button:hover {
         top:100px;
         left:27%;
         opacity: 0.8; */
-        left:0px;
+        left: 0px;
     }
 
 }
@@ -856,24 +901,27 @@ main .petfinder .aside .part-2 button:hover {
     }
 
 }
-.Filter-2{
+
+.Filter-2 {
     margin-top: 0px !important;
- margin: 0px;
- list-style-type: none;   
+    margin: 0px;
+    list-style-type: none;
 }
-.size-item-2{
-    justify-content: left;    
+
+.size-item-2 {
+    justify-content: left;
     margin: 0px;
     border: solid #efeef1 1px;
     background-color: white;
     padding: 10px;
     width: 80%;
-    }
-.filter-title-2{
-margin: 0px;
 }
 
-.Filter-div{
+.filter-title-2 {
+    margin: 0px;
+}
+
+.Filter-div {
     display: flex;
     flex-direction: column;
 }

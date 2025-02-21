@@ -9,6 +9,8 @@ getPets.addEventListener("click", () => {
         navbarBottom.style.opacity = "1"
         navbarBottom.style.transform = "translateY(0px)"
         navbarBottom.style.transform = "all 1s ease"
+        document.getElementById("Path").style.zIndex = 0;
+
     }
     else {
         navbarBottom.classList.toggle("hidden");
@@ -16,6 +18,8 @@ getPets.addEventListener("click", () => {
         navbarBottom.style.opacity = "0"
         navbarBottom.style.transform = "translateY(-10px)"
         navbarBottom.style.transform = "all 1s ease"
+        document.getElementById("Path").style.zIndex = 1000;
+
     }
 })
 
@@ -60,25 +64,25 @@ document.querySelectorAll("#side-navbar .side-nav-item li").forEach((e) => {
 
         }
     })
-}) 
+})
 const modal = document.getElementById("FilterModal");
 const openModalButton = document.getElementById("MyModalButton");
 const closeModalButton = document.getElementById("close");
-console.log(modal,openModalButton,closeModalButton)
+console.log(modal, openModalButton, closeModalButton)
 console.log("hello")
 
 // Open modal when the "FILTER BREEDS" button is clicked
-openModalButton.addEventListener("click", function() {
+openModalButton.addEventListener("click", function () {
     modal.style.display = "block"; // Show the modal
 });
 
 // Close modal when the "SEE ALL BREEDS" link or close button is clicked
-closeModalButton.addEventListener("click", function() {
+closeModalButton.addEventListener("click", function () {
     modal.style.display = "none"; // Hide the modal
 });
 
 // Close the modal if the user clicks outside the modal content
-window.addEventListener("click", function(event) {
+window.addEventListener("click", function (event) {
     if (event.target === modal) {
         modal.style.display = "none"; // Hide the modal
     }
@@ -87,12 +91,12 @@ var swiper = new Swiper(".mySwiper", {
     slidesPerView: 4,
     spaceBetween: 30,
     pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+        el: ".swiper-pagination",
+        clickable: true,
     },
     breakpoints: {
-      0: { slidesPerView: 1 },
-      768: { slidesPerView: 2 },
-      1024: { slidesPerView: 3 }
-  }
-  });
+        0: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 }
+    }
+});

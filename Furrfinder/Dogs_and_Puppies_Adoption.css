@@ -255,6 +255,20 @@ nav {
 }
 
 
+.working_page {
+    pointer-events: none;
+    color: dimgrey !important;
+    text-decoration: none;
+}
+
+.link {
+    display: inline;
+    color: rgb(86, 16, 152);
+    font-size: large;
+    cursor: pointer;
+}
+
+
 
 /* main section */
 
@@ -765,6 +779,7 @@ footer .footer-end .social span a {
     text-decoration: none;
     font-size: 15px;
 }
-.heading{
+
+.heading {
     margin: 40px;
 }
