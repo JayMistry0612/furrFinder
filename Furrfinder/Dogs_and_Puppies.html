@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogs And Puppies | FurrFinder</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Dogs_and_Puppies.css">
+</head>
+
+<body>
+    <nav>
+        <div id="navbar-top">
+            <div class="part-1">
+                <h2 id="logo">
+                    <a href="home.html"> FURRFINDER</a>
+                </h2>
+                <h2 id="about-pets">
+                    <a href="#" style="color:  rgb(86, 16, 152)!important;"> ALL ABOUT PETS <i
+                            class="fa-solid fa-caret-down"></i></a>
+                </h2>
+            </div>
+            <div class="part-2">
+                <a href="#">
+                    <span id="heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </span>
+                </a>
+                <button type="button">
+                    <a href="#"> <span><i class="fa-solid fa-user"></i></span></a>
+                    <span><a href="#">SIGN IN</a></span>
+                </button>
+                <span id="nav-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+            </div>
+
+        </div>
+        <!-- navbar-bottom -->
+
+        <div id="navbar-bottom" class="hidden">
+            <ul class="nav-items">
+                <li class="nav-item">
+                    <a href="#">ADOPT OR GET INVOLVED</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="aboutpets.html">About Petfinder</a>
+                        </li>
+                        <li>
+                            <a href="adoptpet.html">Adopting pets</a>
+                        </li>
+                        <li>
+                            <a href="animalshelter&rescues.html">Animal Shelter and rescues</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#">DOG AND PUPPIES</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="#">About Petfinder</a>
+                        </li>
+                        <li>
+                            <a href="#">Adopting pets</a>
+                        </li>
+                        <li>
+                            <a href="#">Animal Shelter and rescues</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#">CATS AND KITTENS</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="#">About Petfinder</a>
+                        </li>
+                        <li>
+                            <a href="#">Adopting pets</a>
+                        </li>
+                        <li>
+                            <a href="#">Animal Shelter and rescues</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+        <!-- side bar -->
+        <div id="side-navbar" class="hidden">
+            <ul class="side-nav-item">
+                <li>
+                    <a href="#" class="hidden">ADOPT OR GET INVOLVED <i class="fa-solid fa-caret-down"></i></a></a>
+                    <ul class="nav-sub-item">
+                        <li>
+                            <a href="aboutpets.html">About pet finder </a>
+                        </li>
+                        <li>
+                            <a href="adoptpet.html">Adopting pets</a>
+                        </li>
+                        <li>
+                            <a href="animalshelter&rescues.html">Animal shelter and rescues</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="hidden">DOG AND PUPPIES <i class="fa-solid fa-caret-down"></i></a></a>
+                    <ul class="nav-sub-item">
+                        <li>
+                            <a href="#">About pet hello</a>
+                        </li>
+                        <li>
+                            <a href="#">Adopting pets</a>
+                        </li>
+                        <li>
+                            <a href="#">Animal shelter and rescues</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="hidden">CATS AND KITTENS <i class="fa-solid fa-caret-down"></i></a></a>
+                    <ul class="nav-sub-item">
+                        <li>
+                            <a href="#">About pet hello</a>
+                        </li>
+                        <li>
+                            <a href="#">Adopting pets</a>
+                        </li>
+                        <li>
+                            <a href="#">Animal shelter and rescues</a>
+                        </li>
+
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <!-- main section -->
+    <h1 class="heading">Dogs & Puppies </h1>
+    <main>
+        <div class="petfinder">
+            <div class="info">
+                <div class="text">
+                    <p>Welcome to our Dogs & Puppies articles, your one-stop resource for all things canine! Whether you need training tips, advice on keeping your dog healthy and happy or information on finding a dog for adoption, we’ve got you covered. Our experts provide valuable insights into all life stages of dogs, from small lap dogs to giant breeds. Explore our Dogs & Puppies articles to learn about the best care for your furry friend today.</p>
+                </div>
+
+                <div class="about-pet-adoption">
+                    <a href="#">Dog adoption <span>VIEW ALL ></span></a>
+                    <div class="about-pet-adoption-cards">
+
+                        <div class="cards">
+                            <img src="./assest/Dog-Adoption-1.jpg" alt="">
+                            <div>
+                                <a href="#">Finding a Dog</a>
+                                <P>Where Can You Adopt a Dog? Differences Amo...
+                                </P>
+                            </div>
+
+                        </div>
+                        <div class="cards">
+                            <img src="./assest/Dog-Adoption-2.jpg" alt="">
+                            <div>
+                                <a href="#">Finding a Dog</a>
+                                <P>
+                                    How to Adopt a Dog: Step-by-Step Guide                                </P>
+                            </div>
+
+                        </div>
+                        <div class="cards">
+                            <img src="./assest/Dog-Adoption-3.jpg" alt="">
+                            <div>
+                                <a href="#">Your New Dog</a>
+                                <P>
+                                    How to Introduce a New Dog and Get Dogs to Bond
+                                                                    </P>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="about-pet-adoption">
+                    <a href="#">Dog Breeds <span>VIEW ALL ></span></a>
+                    <div class="about-pet-adoption-cards">
+
+                        <div class="cards">
+                            <img src="./assest/Affen pinscher.webp" alt="">
+                            <div>
+                                <a href="#">Affenpinscher</a>
+                                <P>The Affenpinscher is a lively and sturdy toy breed known for its square proportions and ...
+                                </P>
+                            </div>
+
+                        </div>
+                        <div class="cards">
+                            <img src="./assest/Afghan Hound.webp" alt="">
+                            <div>
+                                <a href="#">Afghan Hound</a>
+                                <P>
+                                    The beauty queens of the dog world, the Afghan Hound’s distinctive body and coat are instantly recognizable. Native..                                </P>
+                            </div>
+
+                        </div>
+                        <div class="cards">
+                            <img src="./assest/Airedale Terrier.webp" alt="">
+                            <div>
+                                <a href="#">Airedale Terrier</a>
+                                <P>
+                                    As the largest terrier breed, the Airedale Terrier—nicknamed the "King of Terriers" for their size—is truly a head-turner. Their...                                </P>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="about-pet-adoption">
+                    <a href="#">Dog Behavior<span>VIEW ALL ></span></a>
+                    <div class="about-pet-adoption-cards">
+
+                        <div class="cards">
+                            <img src="./assest/Dog-Behaviour-1.jpg" alt="">
+                            <div>
+                                <a href="#">Chewing</a>
+                                <P>How To Stop A Dog From Chewing When Home Alone?
+                                </P>
+                            </div>
+
+                        </div>
+                        <div class="cards">
+                            <img src="./assest/aboutpetfinder-2.jpg.png" alt="">
+                            <div>
+                                <a href="#">Chewing</a>
+                                <P>
+                                    Puppy Mouthing                                </P>
+                            </div>
+
+                        </div>
+                        <div class="cards">
+                            <img src="./assest/Dog-Behaviour-3.jpg" alt="">
+                            <div>
+                                <a href="#">Chewing</a>
+                                <P>
+                                    How to Help Puppy Teething                                </P>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="about-pet-adoption">
+                    <a href="#">Dog Health & Wellness <span>VIEW ALL ></span></a>
+                    <div class="about-pet-adoption-cards">
+
+                        <div class="cards">
+                            <img src="./assest/aboutpetfinder-2.jpg.png" alt="">
+                            <div>
+                                <a href="#">Spaying & Neutering</a>
+                                <P>Non-Surgical Dog & Cat Sterilization
+                                </P>
+                            </div>
+
+                        </div>
+                        <div class="cards">
+                            <img src="./assest/aboutpetfinder-2.jpg.png" alt="">
+                            <div>
+                                <a href="#">Spaying & Neutering</a>
+                                <P>
+                                    When is a Puppy or Kitten Old Enough to Neuter?                                </P>
+                            </div>
+
+                        </div>
+                        <div class="cards">
+                            <img src="./assest/aboutpetfinder-2.jpg.png" alt="">
+                            <div>
+                                <a href="#">Seasonal Health Tips</a>
+                                <P>
+                                    How to Protect Dog Paws in Winter                                </P>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="about-pet-adoption">
+                    <a href="#">Dog Training <span>VIEW ALL ></span></a>
+                    <div class="about-pet-adoption-cards">
+
+                        <div class="cards">
+                            <img src="./assest/aboutpetfinder-2.jpg.png" alt="">
+                            <div>
+                                <a href="#">Obedience Training</a>
+                                <P>How to Stop Dog from Jumping
+                                </P>
+                            </div>
+
+                        </div>
+                        <div class="cards">
+                            <img src="./assest/aboutpetfinder-2.jpg.png" alt="">
+                            <div>
+                                <a href="#">Socializing</a>
+                                <P>
+                                    Pet-Friendly Hotel Etiquette: 10 Tips for a Successful Hotel Stay With Your Dog                                </P>
+                            </div>
+
+                        </div>
+                        <div class="cards">
+                            <img src="./assest/Dog-Training-3.jpg" alt="">
+                            <div>
+                                <a href="#">Obedience Training</a>
+                                <P>
+                                    When Your Dog Won’t Come When Called                                </P>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="about-pet-adoption">
+                    <a href="#">Feeding Your Dog <span>VIEW ALL ></span></a>
+                    <div class="about-pet-adoption-cards">
+
+                        <div class="cards">
+                            <img src="./assest/Feeding-Your-Dog-1.webp" alt="">
+                            <div>
+                                <a href="#">Dog Nutrition</a>
+                                <P>Are Antlers Safe for Dogs?
+                                </P>
+                            </div>
+
+                        </div>
+                        <div class="cards">
+                            <img src="./assest/Feeding-Your-Dog-2.webp" alt="">
+                            <div>
+                                <a href="#">Dog Nutrition</a>
+                                <P>
+                                    Is Apple Cider Vinegar Good For Dogs?                                 </P>
+                            </div>
+
+                        </div>
+                        <div class="cards">
+                            <img src="./assest/aboutpetfinder-2.jpg.png" alt="">
+                            <div>
+                                <a href="#">Dog Nutrition</a>
+                                <P>
+                                    Your Dog’s Necessary Nutrients                                </P>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="about-pet-adoption">
+                    <a href="#">Other Dog Information <span>VIEW ALL ></span></a>
+                    <div class="about-pet-adoption-cards">
+
+                        <div class="cards">
+                            <img src="./assest/aboutpetfinder-2.jpg.png" alt="">
+                            <div>
+                                <a href="#">Facts About Dogs</a>
+                                7 Most Popular Dog Videos on YouTube                                </P>
+                            </div>
+
+                        </div>
+                        <div class="cards">
+                            <img src="./assest/Other-Dog-Information-2.webp" alt="">
+                            <div>
+                                <a href="#">Microchipping</a>
+                                <P>
+                                    How do Pet Microchips Work?                                </P>
+                            </div>
+
+                        </div>
+                        <div class="cards">
+                            <img src="./assest/Other-Dog-Information-3.webp" alt="">
+                            <div>
+                                <a href="#">Facts About Dogs</a>
+                                <P>
+                                    Myths and Facts About Pit Bulls                                </P>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <section id="section-2">
+
+                    <div class="pets">
+                        <p>Pets Avaible for Adoption Nearby </p>
+                        <div id="pets-option">
+                            <div class="pets-names">
+                                <div>
+                                    <img src="./assest/Sassafras.jpeg" alt="">
+                                    <span><a href="#"><i class="fa-regular fa-heart"></i></a></span>
+                                </div>
+                                <p>Sassasfras</p>
+
+                            </div>
+                            <div class="pets-names">
+                                <div>
+                                    <img src="./assest/jani.jpeg" alt="">
+                                    <span><a href="#"><i class="fa-regular fa-heart"></i></a></span>
+                                </div>
+                                <p>Jani</p>
+
+                            </div>
+                            <div class="pets-names">
+                                <div>
+                                    <img src="./assest/nokia.jpeg" alt="">
+                                    <span><a href="#"><i class="fa-regular fa-heart"></i></a></span>
+                                </div>
+                                <p>Nokai</p>
+
+                            </div>
+                           
+
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+
+            </div>
+            <div class="aside">
+                <div class="part-1">
+                    <div>
+                        <img src="./assest/help-box-image.webp" alt="">
+                    </div>
+                    <div>
+                        <h2>Find Your best match</h2>
+                        <p>It takes only 60 seconds</p>
+                        <button>GET STARTED</button>
+                    </div>
+                </div>
+                <div class="part-2">
+                    <p>Find Pet-Adoption Groups</p>
+                    <input type="text" id="location" placeholder="Location">
+                    <input type="text" id="grp-name" placeholder="Group Name">
+
+                    <button>Search</button>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="link">
+
+            <div class="signup">
+                <p>To get the latest update. sign up for the petfinder newsletter</p>
+                <button>
+                    SIGN UP
+                </button>
+            </div>
+
+            <ul>
+                <p>ADOPT OR GET INVOLVED</p>
+                <li><a href="#">All Adopt or Get Involved</a></li>
+                <li><a href="#">Adopting Pets</a></li>
+                <li><a href="#">Animal Shelters & Rescues</a></li>
+                <li><a href="#">Contact US</a></li>
+            </ul>
+            <ul>
+                <p>ABOUT CATS AND KITTENS</p>
+                <li><a href="#">All About Cats & Kittens</a></li>
+                <li><a href="#">Cat Adoption</a></li>
+                <li><a href="#">Cat Breeds</a></li>
+                <li><a href="#">Feeding Your Cat</a></li>
+                <li><a href="#">Cat Behavior</a></li>
+                <li><a href="#">Cat Health & Wellness</a></li>
+                <li><a href="#">Cat Training</a></li>
+            </ul>
+            <ul>
+                <p>ABOUT DOGS AND PUPPIES</p>
+                <li><a href="#">All About Dogs & Puppies</a></li>
+                <li><a href="#">Dog Adoption</a></li>
+                <li><a href="#">Dog Breeds</a></li>
+                <li><a href="#">Feeding Your Dog</a></li>
+                <li><a href="#">Dog Behavior</a></li>
+                <li><a href="#">Dog Health & Wellnessr</a></li>
+                <li><a href="#">Dog Training</a></li>
+            </ul>
+            <ul>
+                <p>RESOURCE</p>
+                <li><a href="#">FAQS</a></li>
+                <li><a href="#">Mobile App Download</a></li>
+                <li><a href="#">Patnerships</a></li>
+                <li><a href="#">News Center</a></li>
+                <li><a href="#">Contact US</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer-end">
+            <div class="copy">
+                <span>
+                    <i class="fa-regular fa-copyright"></i><a href="home.html">2025 FurrFinder.com</a>
+                </span>
+            </div>
+            <div class="social">
+                <span>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </span>
+                <span>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </span>
+                <span>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </span>
+                <span>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </span>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="Dogs_and_Puppies.js"></script>
+</body>
+
+</html>
