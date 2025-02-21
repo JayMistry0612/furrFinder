@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogs Breeds | FurrFinder</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="DogBreeds.css">
+</head>
+
+<body>
+
+    <nav>
+        <div id="navbar-top">
+            <div class="part-1">
+                <h2 id="logo">
+                    <a href="home.html"> FURRFINDER</a>
+                </h2>
+                <h2 id="about-pets">
+                    <a href="#" style="color:  rgb(86, 16, 152)!important;"> ALL ABOUT PETS <i
+                            class="fa-solid fa-caret-down"></i></a>
+                </h2>
+            </div>
+            <div class="part-2">
+                <a href="#">
+                    <span id="heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </span>
+                </a>
+                <button type="button">
+                    <a href="#"> <span><i class="fa-solid fa-user"></i></span></a>
+                    <span><a href="#">SIGN IN</a></span>
+                </button>
+                <span id="nav-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+            </div>
+
+        </div>
+        <!-- navbar-bottom -->
+
+        <div id="navbar-bottom" class="hidden">
+            <ul class="nav-items">
+                <li class="nav-item">
+                    <a href="#">ADOPT OR GET INVOLVED</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="aboutpets.html">About Petfinder</a>
+                        </li>
+                        <li>
+                            <a href="#">Adopting pets</a>
+                        </li>
+                        <li>
+                            <a href="#">Animal Shelter and rescues</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#">DOG AND PUPPIES</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="#">About Petfinder</a>
+                        </li>
+                        <li>
+                            <a href="#">Adopting pets</a>
+                        </li>
+                        <li>
+                            <a href="#">Animal Shelter and rescues</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#">CATS AND KITTENS</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="#">About Petfinder</a>
+                        </li>
+                        <li>
+                            <a href="#">Adopting pets</a>
+                        </li>
+                        <li>
+                            <a href="#">Animal Shelter and rescues</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+        <!-- side bar -->
+        <div id="side-navbar" class="hidden">
+            <ul class="side-nav-item">
+                <li>
+                    <a href="#" class="hidden">ADOPT OR GET INVOLVED <i class="fa-solid fa-caret-down"></i></a></a>
+                    <ul class="nav-sub-item">
+                        <li>
+                            <a href="aboutpets.html">About pet finder </a>
+                        </li>
+                        <li>
+                            <a href="#">Adopting pets</a>
+                        </li>
+                        <li>
+                            <a href="#">Animal shelter and rescues</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="hidden">DOG AND PUPPIES <i class="fa-solid fa-caret-down"></i></a></a>
+                    <ul class="nav-sub-item">
+                        <li>
+                            <a href="#">About pet hello</a>
+                        </li>
+                        <li>
+                            <a href="#">Adopting pets</a>
+                        </li>
+                        <li>
+                            <a href="#">Animal shelter and rescues</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="hidden">CATS AND KITTENS <i class="fa-solid fa-caret-down"></i></a></a>
+                    <ul class="nav-sub-item">
+                        <li>
+                            <a href="#">About pet hello</a>
+                        </li>
+                        <li>
+                            <a href="#">Adopting pets</a>
+                        </li>
+                        <li>
+                            <a href="#">Animal shelter and rescues</a>
+                        </li>
+
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+    <div style="position: relative;">
+        <img src="./assest/dog-landing.webp" class="img1"/>
+        <div class="div1">
+            <div id="Path">
+                <a href="home.html" class="link" style="text-decoration:underline;"> Home </a>
+                <a href="#" class="link" style="text-decoration:none!important;"> &nbsp; &gt </a>
+                &nbsp;
+                <a href="Dogs_and_Puppies.html" class="link" style="text-decoration:underline;"> Dogs and Puppies </a>
+                &nbsp;
+                <a href="#" class="link working_page">
+                    &gt Dog Breeds</a>
+            </div>
+            <div>
+                <p class="FInd-Your-Dog">Find Your Perfect Dog or Puppy Breed</p>
+            </div>
+            <div class="search-bar">
+                <p>Search Breed Name</p>
+            </div>
+        </div>
+  </div>
+   <!-- Swiper -->
+    
+   <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" >
+        <img src="./assest/Frenchie_05-1.webp"/>
+        <p class="carousel-content">WHAT ARE THE CUTEST DOG...</p>
+      </div>
+      <div class="swiper-slide" >
+        <img src="./assest/Border-Collie_01.webp" />
+        <p class="carousel-content">WHAT ARE THE SMARTEST DOG...</p>
+      </div>
+      <div class="swiper-slide">
+        <img src="./assest/healthiestdogs.webp" />
+        <p class="carousel-content">WHAT ARE THE HEALTHIEST...</p>
+      </div>
+      <div class="swiper-slide">
+        <img src="./assest/teddybeardog.webp" />
+        <p class="carousel-content">TEDDY BEAR DOG & PUPPY...</p>
+      </div>
+      <div class="swiper-slide" >
+        <img src="./assest/teddybear-dog-breeds.webp" />
+        <p class="carousel-content">WHAT ARE TEDDY BEAR DOG...</p>
+      </div>
+      <div class="swiper-slide">
+        <img src="./assest/01_Dachshund.webp" />
+        <p class="carousel-content">WHAT ARE BEST DOGS?...</p>
+      </div>
+      <div class="swiper-slide">
+        <img src="./assest/Australian-Shepherd_01-1.webp"/>
+        
+        <p class="carousel-content">WHAT ARE THE FLUFFIEST DOG...</p>
+      </div>
+      
+    </div>
+    <div class="swiper-pagination"></div>
+      
+    </div>
+
+    <button type="button" id="MyModalButton" class="MyModal-btn">FILTER BREEDS</button>
+    <div class="MyModal" id="FilterModal">
+        <div class="Modal-content">
+            <h4 class="filter-title">Size</h4>
+                <ul class="Filter" >
+                    <li class="size-item">Small</li>
+                    <li class="size-item">Medium</li>
+                    <li class="size-item">Large</li>
+                    <li class="size-item">Extra Large</li>
+                </ul>
+                <h4 class="filter-title">ENERGY LEVEL</h4>
+                <ul class="Filter">
+                    <li class="Energy-lvl-items">Low</li>
+                    <li class="Energy-lvl-items">Moderate</li>
+                    <li class="Energy-lvl-items">High</li>
+                </ul>
+                <h4 class="filter-title">Friendliness</h4>
+                <ul class="Filter">
+                    <li class="size-item">Towards Dogs</li>
+                    <li class="size-item">Towards Other Pets</li>
+                </ul>
+                <h4 class="filter-title">Ease of Training</h4>
+                <ul class="Filter">
+                    <li class="Energy-lvl-items">Easy</li>
+                    <li class="Energy-lvl-items">Average</li>
+                    <li class="Energy-lvl-items">Difficult</li>
+                </ul>
+                <h4 class="filter-title">Grooming Requirements </h4>
+                <ul class="Filter">
+                    <li class="Energy-lvl-items">Low</li>
+                    <li class="Energy-lvl-items">Moderate</li>
+                    <li class="Energy-lvl-items">High</li>
+                </ul>
+                <h4 class="filter-title" >Vocality</h4>
+                <ul class="Filter">
+                    <li class="Energy-lvl-items">Low</li>
+                    <li class="Energy-lvl-items">Moderate</li>
+                    <li class="Energy-lvl-items">High</li>
+                </ul>
+                <h4 class="filter-title">EXERCISE REQUIREMENTS</h4>
+                <ul class="Filter">
+                    <li class="Energy-lvl-items">Moderate</li>
+                    <li class="Energy-lvl-items">Significant</li>
+                    <li class="Energy-lvl-items">Rigorous</li>
+                </ul>
+                <h4 class="filter-title">AFFECTION NEEDS</h4>
+                <ul class="Filter">
+                    <li class="Energy-lvl-items">Independent</li>
+                    <li class="Energy-lvl-items">Balanced</li>
+                    <li class="Energy-lvl-items">Cuddly</li>
+                </ul>
+                <ul class="Filter">
+                    <a href="#" id="close" class="close-btn"><li >SEE ALL BREEDS</li></a>
+                
+                </ul>
+        </div>
+    </div>
+    
+
+    <main>
+        <div class="petfinder">
+            <div class="aside">
+                <h2>Filter Breeds</h2>
+                <div class="Filter-div">    
+                <h4 class="filter-title-2">PLAYFULNESS</h4>
+                <div class="Filter-2" >
+                <div class="size-item-2">Low</div>
+                <div class="size-item-2">Moderate</div>
+                <div class="size-item-2">High</div>
+                </div>
+        </div>
+
+        <div class="Filter-div">    
+            <h4 class="filter-title-2">ENERGY LEVEL</h4>
+            <div class="Filter-2" >
+            <div class="size-item-2">Low</div>
+            <div class="size-item-2">Moderate</div>
+            <div class="size-item-2">High</div>
+            </div>
+    </div>
+    <div class="Filter-div">    
+        <h4 class="filter-title-2">FRIENDLINESS</h4>
+        <div class="Filter-2" >
+        <div class="size-item-2">Towards Dogs</div>
+        <div class="size-item-2">Towards Other Pets</div>
+        </div>
+</div>
+<div class="Filter-div">    
+    <h4 class="filter-title-2">EASE OF TRAINING</h4>
+    <div class="Filter-2" >
+        <div class="size-item-2">Easy</div>
+        <div class="size-item-2">Average</div>
+        <div class="size-item-2">Difficult</div>
+    </div>
+</div>
+<div class="Filter-div">    
+    <h4 class="filter-title-2">GROOMING REQUIREMENTS</h4>
+    <div class="Filter-2" >
+        <div class="size-item-2">Low</div>
+        <div class="size-item-2">Moderate</div>
+        <div class="size-item-2">High</div>
+    </div>
+</div>
+<div class="Filter-div">    
+    <h4 class="filter-title-2">VOCALITY</h4>
+    <div class="Filter-2" >
+        <div class="size-item-2">Low</div>
+        <div class="size-item-2">Moderate</div>
+        <div class="size-item-2">High</div>
+    </div>
+</div>
+<div class="Filter-div">    
+    <h4 class="filter-title-2">EXERCISE REQUIREMENTS</h4>
+    <div class="Filter-2" >
+        <div class="size-item-2">Moderate</div>
+        <div class="size-item-2">Significant</div>
+        <div class="size-item-2">Rigorous</div>
+    </div>
+</div>
+<div class="Filter-div">    
+    <h4 class="filter-title-2">AFFECTION NEEDS</h4>
+    <div class="Filter-2" >
+        <div class="size-item-2">Independent</div>
+        <div class="size-item-2">Balanced</div>
+        <div class="size-item-2">Cuddly</div>
+    </div>
+</div>
+
+
+            </div>
+            <div class="info">
+                <div class="cards">
+                    <div class="card breed_card">
+                        <img src="./assest/Affen pinscher.webp" alt="">
+                        <div>
+                            <a href="#" class="breed_a">Affenpinscher</a>
+                            <hr>
+                            </hr>
+                            <a class="breed_footer">View available for adoption</a>
+                        </div>
+
+                    </div>
+                    <div class="card breed_card">
+                        <img src="./assest/Afghan Hound.webp" alt="">
+                        <div>
+                            <a href="#" class="breed_a">Afghan Hound</a>
+                            <hr>
+                            </hr>
+                            <a class="breed_footer">View available for adoption</a>
+                        </div>
+
+                    </div>
+                    <div class="card breed_card">
+                        <img src="./assest/Airedale Terrier.webp" alt="">
+                        <div>
+                            <a href="#" class="breed_a">Airedale Terrier</a>
+                            <hr>
+                            </hr>
+                            <a class="breed_footer">View available for adoption</a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="cards">
+                    <div class="card breed_card">
+                        <img src="./assest/Akbash.webp" alt="">
+                        <div>
+                            <a href="#" class="breed_a">Akbash</a>
+                            <hr>
+                            </hr>
+                            <a class="breed_footer">View available for adoption</a>
+                        </div>
+
+                    </div>
+                    <div class="card breed_card">
+                        <img src="./assest/Akita.webp" alt="">
+                        <div>
+                            <a href="#" class="breed_a">Akita</a>
+                            <hr>
+                            </hr>
+                            <a class="breed_footer">View available for adoption</a>
+                        </div>
+
+                    </div>
+                    <div class="card breed_card">
+                        <img src="./assest/Alaskan Klee Kai.webp" alt="">
+                        <div>
+                            <a href="#" class="breed_a">Alaskan Klee Kai</a>
+                            <hr>
+                            </hr>
+                            <a class="breed_footer">View available for adoption</a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="cards">
+                    <div class="card breed_card">
+                        <img src="./assest/American Bulldog.webp" alt="">
+                        <div>
+                            <a href="#" class="breed_a">American BullDog</a>
+                            <hr>
+                            </hr>
+                            <a class="breed_footer">View available for adoption</a>
+                        </div>
+
+                    </div>
+                    <div class="card breed_card">
+                        <img src="./assest/American Bully Dog.webp" alt="">
+                        <div>
+                            <a href="#" class="breed_a">American Bully</a>
+                            <hr>
+                            </hr>
+                            <a class="breed_footer">View available for adoption</a>
+                        </div>
+
+                    </div>
+                    <div class="card breed_card">
+                        <img src="./assest/American Cocker Spaniel.webp" alt="">
+                        <div>
+                            <a href="#" class="breed_a">American Cocker Spaniel</a>
+                            <hr>
+                            </hr>
+                            <a class="breed_footer">View available for adoption</a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+   
+    <footer>
+        <div class="link">
+
+            <div class="signup">
+                <p>To get the latest update. sign up for the petfinder newsletter</p>
+                <button>
+                    SIGN UP
+                </button>
+            </div>
+
+            <ul>
+                <p>ADOPT OR GET INVOLVED</p>
+                <li><a href="#">All Adopt or Get Involved</a></li>
+                <li><a href="#">Adopting Pets</a></li>
+                <li><a href="#">Animal Shelters & Rescues</a></li>
+                <li><a href="#">Contact US</a></li>
+            </ul>
+            <ul>
+                <p>ABOUT CATS AND KITTENS</p>
+                <li><a href="#">All About Cats & Kittens</a></li>
+                <li><a href="#">Cat Adoption</a></li>
+                <li><a href="#">Cat Breeds</a></li>
+                <li><a href="#">Feeding Your Cat</a></li>
+                <li><a href="#">Cat Behavior</a></li>
+                <li><a href="#">Cat Health & Wellness</a></li>
+                <li><a href="#">Cat Training</a></li>
+            </ul>
+            <ul>
+                <p>ABOUT DOGS AND PUPPIES</p>
+                <li><a href="#">All About Dogs & Puppies</a></li>
+                <li><a href="#">Dog Adoption</a></li>
+                <li><a href="#">Dog Breeds</a></li>
+                <li><a href="#">Feeding Your Dog</a></li>
+                <li><a href="#">Dog Behavior</a></li>
+                <li><a href="#">Dog Health & Wellnessr</a></li>
+                <li><a href="#">Dog Training</a></li>
+            </ul>
+            <ul>
+                <p>RESOURCE</p>
+                <li><a href="#">FAQS</a></li>
+                <li><a href="#">Mobile App Download</a></li>
+                <li><a href="#">Patnerships</a></li>
+                <li><a href="#">News Center</a></li>
+                <li><a href="#">Contact US</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer-end">
+            <div class="copy">
+                <span>
+                    <i class="fa-regular fa-copyright"></i><a href="home.html">2025 FurrFinder.com</a>
+                </span>
+            </div>
+            <div class="social">
+                <span>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </span>
+                <span>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </span>
+                <span>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </span>
+                <span>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </span>
+            </div>
+
+        </div>
+    </footer>
+     <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="DogBreeds.js"></script>
+</body>
+
+</html>
